@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN-API Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GREEN-API Interface</h1>
+        <div class="field">
+            <label for="idInstance">idInstance</label>
+            <input type="text" id="idInstance" placeholder="Enter idInstance" value="7103939617">
+        </div>
+        <div class="field">
+            <label for="apiTokenInstance">ApiTokenInstance</label>
+            <input type="text" id="apiTokenInstance" placeholder="Enter ApiTokenInstance" value="0d0eed031a5944b2a002d140a5f601e9485290e5167a4d96ae">
+        </div>
+        <div class="field">
+            <label for="chatId">Chat ID</label>
+            <input type="text" id="chatId" placeholder="Enter Chat ID (e.g., 77073400416@c.us)">
+        </div>
+        <div class="field">
+            <label for="message">Message</label>
+            <input type="text" id="message" placeholder="Enter your message">
+        </div>
+        <div class="field">
+            <label for="fileUrl">File URL</label>
+            <input type="text" id="fileUrl" placeholder="Enter File URL (e.g., https://drive.google.com/uc?export=download&id=...)">
+        </div>
+        <div class="field">
+            <label for="fileName">File Name</label>
+            <input type="text" id="fileName" placeholder="Enter File Name (e.g., file.pdf)">
+        </div>
+        <button class="btn" onclick="getSettings()">getSettings</button>
+        <button class="btn" onclick="getStateInstance()">getStateInstance</button>
+        <button class="btn" onclick="sendMessage()">sendMessage</button>
+        <button class="btn" onclick="sendFileByUrl()">sendFileByUrl</button>
+        <div class="field">
+            <label for="response">Response</label>
+            <textarea id="response" class="readonly" rows="10" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
